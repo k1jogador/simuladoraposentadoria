@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:padding="16dp"
     android:gravity="center"
-    android:background="@color/amarelo"
-    android:padding="60dp">
+    android:background="@color/amarelo">
 
         <TextView
             android:id="@+id/titulo"
@@ -60,6 +60,7 @@
                 android:inputType="number"
                 android:hint="@string/placeholder"
                 android:padding="10dp"
+                android:textColor="@color/black"
                 android:background="@drawable/input_style"
                 android:fontFamily="@font/louis"
                 android:gravity="center_vertical"
@@ -75,6 +76,8 @@
                 android:backgroundTint="@color/verde"
                 android:text="@string/button"
                 android:layout_marginStart="10dp"
+                android:fontFamily="@font/louis"
+                android:drawableEnd="@drawable/icon_button"
                 />
 
         </LinearLayout>
@@ -86,6 +89,10 @@
             android:layout_marginTop="18dp"
             tools:text="Resultado:"
             android:textAlignment="center"
-            android:layout_marginBottom="100dp"/>
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/louis"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
 
 </LinearLayout>

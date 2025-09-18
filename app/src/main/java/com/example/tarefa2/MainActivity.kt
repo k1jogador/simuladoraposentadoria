@@ -32,18 +32,26 @@ class MainActivity : AppCompatActivity() {
             if (idade != null) {
                 if (sexoSelecionado.trim() == "Masculino") {
                     resultado = 65 - idade
-                    if (idade < 65){
+                    if (idade.toInt() == 0){
+                        textResultado = "Você se aposenta este ano!"
+                    }else{
+                    if (idade < 65 ){
                         textResultado = "Faltam ${resultado} ano(s) para você se aposentar"
                     }else{
                         textResultado = "Você já está aposentado há ${resultado* -1} ano(s)!"
                     }
+                        }
 
                 } else {
                     resultado = 62 - idade
-                    if (idade < 62){
-                        textResultado = "Faltam ${resultado} ano(s) para você se aposentar"
-                    }else{
-                        textResultado = "Você já está aposentada há ${resultado* -1} ano(s)!"
+                    if (idade.toInt() == 0){
+                        textResultado = "Você se aposenta este ano!"
+                    }else {
+                        if (idade < 62) {
+                            textResultado = "Faltam ${resultado} ano(s) para você se aposentar"
+                        } else {
+                            textResultado = "Você já está aposentada há ${resultado * -1} ano(s)!"
+                        }
                     }
                 }
                 binding.resultado.text = textResultado
