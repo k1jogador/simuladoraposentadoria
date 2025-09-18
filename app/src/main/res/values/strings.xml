@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">tarefa2</string>
+    <string name="titulo">SIMULADOR DE TEMPO DE APOSENTADORIA</string>
+    <string name="placeholder">Idade</string>
+    <string name="button">Calcular</string>
+    <string name="nome">Kauã Alexandre Bernardes</string>
+</resources>
