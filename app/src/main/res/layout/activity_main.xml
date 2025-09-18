@@ -78,6 +78,8 @@
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/louis"
                 android:drawableEnd="@drawable/icon_button"
+                android:textColor="@color/white"
+                android:padding="10dp"
                 />
 
         </LinearLayout>
